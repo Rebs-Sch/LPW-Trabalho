@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Cadastro de Cartao</title>
+</head>
+<body>
+    
+    <div class="container p-4 bg-secondary rounded-4">
+        <div class="col-md-12">
+            <h1>Cadastrar cartão</h1>
+        
+            <form action="cria-cartao.php" method="post">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Nome:</span>
+                    <input type="text" class="form-control" name="nome" placeholder="Nome do álbum" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+        
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Banda: </span>
+                    <input type="text" class="form-control" name="banda" placeholder="Nome da banda" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+        
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Data: </span>
+                    <input type="number" class="form-control" name="data" placeholder="Data de lançamento" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+        
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Gênero: </span>
+                    <input type="text" class="form-control" name="genero" placeholder="Genero musical do álbum" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+        
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Capa: </span>
+                    <input type="text" class="form-control" name="capa" placeholder="Link da imagem da capa" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Link: </span>
+                    <input type="text" class="form-control" name="link" placeholder="Link do álbum no spotify" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+        
+                <button type="submit" class="btn btn-dark">Envia</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
